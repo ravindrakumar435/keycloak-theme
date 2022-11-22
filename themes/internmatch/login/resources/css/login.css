@@ -528,9 +528,7 @@ input:hover, input:focus {
    --------------------------------------- */
 
 .login-pf body {
-    background: url("../img/plain-white-background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
+    background-color: #0F0F0F !important;
 }
 
 /* ---------------------------------------

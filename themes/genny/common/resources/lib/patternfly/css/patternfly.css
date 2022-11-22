@@ -10083,8 +10083,8 @@ h6 .label {
   }
 }
 .login-pf body {
-  background: #080808 url("../img/bg-login.jpg") repeat-x 50% 0;
-  background-size: auto;
+ 
+  background-color: #0F0F0F !important;
 }
 @media (min-width: 768px) {
   .login-pf body {

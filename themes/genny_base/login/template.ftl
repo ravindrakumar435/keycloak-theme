@@ -32,7 +32,12 @@
     </#if>
 </head>
 
-<body class="${properties.kcBodyClass!}">
+<body >
+<div class="row" style="width:100%;">
+<div class="col-12 col-md-6 col-lg-6 layout-conntent-left" style="height:100vh;">
+
+</div>
+<div class="col-12 col-md-6 col-lg-6 layout-conntent-right" style="margin-top:100px;">
   <div class="${properties.kcLoginClass!}">
     <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">
@@ -93,7 +98,10 @@
       </div>
 
     </div>
-  </div>
+  </div></div>
+
+</div>
+
 </body>
 </html>
 </#macro>
