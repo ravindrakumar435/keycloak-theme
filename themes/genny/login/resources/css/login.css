@@ -593,12 +593,13 @@ input:focus {
 }
 
 .layout-conntent-left {
-  background-image: url("../img/background-left.png") !important;
+  background-image: url("../img/background-left1.png") !important;
   position: absolute;
   background-repeat: no-repeat;
   height: 100%;
   background-size: contain;
   left: 0px;
   top: 0px;
-  width: 984px;
+  width: 50%;
+  background-size: cover;
 }
