@@ -8,38 +8,42 @@
         <form id="kc-register-form" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('email',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label>
+                 
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="email" class="${properties.kcInputClass!}" name="email" value="${(register.formData.email!'')}" autocomplete="email" />
+                    <input type="text" id="email" placeholder="${msg("email")}" class="${properties.kcInputClass!}" name="email" value="${(register.formData.email!'')}" autocomplete="email" />
+                     <img src=" ${url.resourcesPath}/icon/email.png"  class=${properties.EmailIconClasss!}   />
                 </div>
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('firstName',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="firstName" class="${properties.kcLabelClass!}">${msg("firstName")}</label>
+                    
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="firstName" class="${properties.kcInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" />
+                    <input type="text" id="firstName" placeholder="${msg("firstName")}" class="${properties.kcInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" />
+                     <img src=" ${url.resourcesPath}/icon/profile.png"  class=${properties.EmailIconClasss!}   />
                 </div>
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('lastName',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="lastName" class="${properties.kcLabelClass!}">${msg("lastName")}</label>
+                   
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="lastName" class="${properties.kcInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" />
+                    <input type="text" id="lastName" placeholder="${msg("lastName")}"  class="${properties.kcInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" />
+                     <img src=" ${url.resourcesPath}/icon/profile.png"  class=${properties.EmailIconClasss!}   />
                 </div>
             </div>
 
           <#if !realm.registrationEmailAsUsername>
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('username',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="username" class="${properties.kcLabelClass!}">${msg("username")}</label>
+                  
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="username" class="${properties.kcInputClass!}" name="username" value="${(register.formData.username!'')}" autocomplete="username" />
+                    <input type="text" id="username"  placeholder="${msg("username")}"  class="${properties.kcInputClass!}" name="username" value="${(register.formData.username!'')}" autocomplete="username" />
+                     <img src=" ${url.resourcesPath}/icon/email.png"  class=${properties.EmailIconClasss!}   />
                 </div>
             </div>
           </#if>
@@ -47,19 +51,21 @@
             <#if passwordRequired>
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="password" class="${properties.kcLabelClass!}">${msg("password")}</label>
+                  
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="password" id="password" class="${properties.kcInputClass!}" name="password" autocomplete="new-password"/>
+                    <input type="password" id="password"  placeholder="${msg("password")}" class="${properties.kcInputClass!}" name="password" autocomplete="new-password"/>
+                      <img src=" ${url.resourcesPath}/icon/password.png"  class=${properties.EmailIconClasss!}  />
                 </div>
             </div>
 
             <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password-confirm',properties.kcFormGroupErrorClass!)}">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")}</label>
+                   
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="password" id="password-confirm" class="${properties.kcInputClass!}" name="password-confirm" />
+                    <input type="password" id="password-confirm" placeholder="${msg("passwordConfirm")}" class="${properties.kcInputClass!}" name="password-confirm" />
+                      <img src=" ${url.resourcesPath}/icon/password.png"  class=${properties.EmailIconClasss!}  />
                 </div>
             </div>
             </#if>

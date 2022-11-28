@@ -33,11 +33,10 @@
 </head>
 
 <body >
-<div class="row" style="width:100%;">
-<div class="col-12 col-md-6 col-lg-6 layout-conntent-left" style="height:100vh;">
-
+<div class="row">
+<div  class="${properties.LayoutConntentLeft!}"  >
 </div>
-<div class="col-12 col-md-6 col-lg-6 layout-conntent-right" style="margin-top:100px;">
+<div  class="${properties.LayoutConntentRight!}" >
   <div class="${properties.kcLoginClass!}">
     <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
       <header class="${properties.kcFormHeaderClass!}">

@@ -5,6 +5,19 @@
   align-items: center;
   width: 100%;
 }
+.sign-Title-header-inner {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff !important;
+  margin-top: 15px;
+}
+.register-footer-link {
+  color: #7be198 !important;
+  text-decoration: underline !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -20,6 +33,8 @@ body {
 .login-pf-header h2 {
   text-align: center;
   font-weight: bold;
+  color: #7be198 !important;
+  margin-top: -12px;
 }
 
 .header-wrapper {
@@ -417,7 +432,7 @@ a.zocial {
 }
 
 .card-pf {
-  background: #1b1b1b;
+  background: #0f0f0f;
   margin: 0 auto;
   padding: 0 !important;
   max-width: 500px;
@@ -425,7 +440,7 @@ a.zocial {
   box-shadow: 0 0 0;
   height: fit-content;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px;
+  box-shadow: rgb(15 15 15) 0px 0px 5px;
   max-height: 100%;
   overflow-y: auto;
 }
@@ -515,11 +530,16 @@ input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
 }
 
+.email_icon-input {
+  position: relative;
+  top: -23px;
+  left: 9px;
+}
 .form-control {
   display: block;
   width: 100%;
   height: 26px;
-  padding: 2px 6px;
+  padding: 2px 30px;
   font-size: 12px;
   line-height: 1.66666667;
   color: #ffff !important;
@@ -550,8 +570,7 @@ input:focus {
 }
 
 .project-primary-color-background {
-  background-color: #1b1b1b !important;
-  border-top: 1px solid #7be198;
+  background-color: #0f0f0f !important;
 }
 .btn-primary {
   color: #181818 !important;
